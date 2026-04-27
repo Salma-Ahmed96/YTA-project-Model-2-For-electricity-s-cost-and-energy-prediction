@@ -145,8 +145,7 @@ if __name__ == '__main__':
     # Make predictions
     predicted_kwh, predicted_bill = predict_electricity(example_new_data, multi_output_lstm_model, feature_scaler)
 
-    print("
---- Example Predictions ---")
+    print("--- Example Predictions ---")
     for i in range(len(example_new_data)):
         print(f"Input {i+1}:")
         print(example_new_data.iloc[i])
