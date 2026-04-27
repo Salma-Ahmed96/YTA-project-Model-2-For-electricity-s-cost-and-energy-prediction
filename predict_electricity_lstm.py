@@ -97,8 +97,8 @@ def predict_electricity(new_data_df, model, scaler):
 
 if __name__ == '__main__':
     # Example usage (for Streamlit, this would be integrated into the app logic)
-    MODEL_PATH = "trained_models/multi_output_lstm_model.h5"
-    SCALER_PATH = "trained_models/feature_scaler.joblib"
+    MODEL_PATH = "multi_output_lstm_model.h5"
+    SCALER_PATH = "feature_scaler.joblib"
 
     if not os.path.exists(MODEL_PATH):
         print(f"Error: Model not found at {MODEL_PATH}")
